@@ -1,5 +1,5 @@
 # arch-linux-on-7559
-Arch Linux installation notes &amp; script on my Dell Inspiron 15 7559 Laptop
+Arch Linux installation notes &amp; script for my Dell Inspiron 15 7559 Laptop
 
 ## Basic Information
 - Hardware Detail: [notebookcheck](https://www.notebookcheck.net/Dell-Inspiron-15-7559-Notebook-Review.154635.0.html)
