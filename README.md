@@ -3,7 +3,7 @@ My Arch Linux installation notes &amp; script on Dell Inspiron 15 7559 Notebook
 
 ## Basic Information
 - Hardware Detail: [notebookcheck](https://www.notebookcheck.net/Dell-Inspiron-15-7559-Notebook-Review.154635.0.html)
-- UEFI Boot(and already HAVE A EFI system partition)
+- UEFI Boot (and already **HAVE** an EFI system partition)
 - Window manager used i3wm-gaps
 - Display manager used LightDM
 - TODO: status bar used polybar
