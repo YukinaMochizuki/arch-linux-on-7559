@@ -50,10 +50,84 @@ and no output
 8. Install essential packages
 ``pacstrap /mnt base base-devel linux linux-firmware dhcpcd``
 
-9. define the disk partitions, or other block devices should be mounted into the filesystem
+9. Define the disk partitions or other block devices. It should be mounted into the filesystem
 ``genfstab -U /mnt >> /mnt/etc/fstab``
-check the file content correct``cat /mnt/etc/fstab``
+check the file content correct
+``cat /mnt/etc/fstab``
 
 10. Done, now go into our new system!
 ``arch-chroot /mnt``
 
+### On new root
+
+1. Set time zone
+````
+# Taipei time zone
+ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+hwclock --systohc
+````
+
+2. Install basic tools
+````
+# My text editor and terminal multiplexer
+pacman -S vim tmux
+
+# lib, wifi tools and intel cpu stability and security updates
+pacman -S dialog wpa_supplicant networkmanager netctl intel-ucode
+
+# help grub to scanning already exists os
+pacman -S os-prober ntfs-3g
+````
+
+3. Localization
+``
+vim /etc/locale.gen
+``
+find``zh_TW.UTF-8 UTF-8`` and ``en_US.UTF-8 UTF-8`` then uncomment it.
+
+````
+locale-gen
+vim /etc/locale.conf
+# and add LANG=en_US.UTF-8
+````
+
+4. Set hostname
+``
+vim /etc/hostname
+``
+
+5. Set localhost in /etc/hosts
+
+````
+127.0.0.1	localhost
+::1		localhost
+127.0.1.1	myhostname.localdomain	myhostname
+````
+
+6. Root password and create user
+````
+passwd
+
+# Create a user with home dir
+useradd -m Username
+````
+
+7. Install bootloader
+````
+# Install grub2
+pacman -S grub efibootmgr
+
+# Word "x" in sdx need to replace according to the actual situation 
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
+
+# Generate config
+grub-mkconfig -o /boot/grub/grub.cfg
+````
+
+8. Umount and reboot
+````
+exit
+umount /mnt/boot
+umount /mnt
+reboot
+````
