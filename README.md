@@ -30,11 +30,9 @@ or wifi
 and no output
 
 4. Partition the disks
-
-    use ``fdisk /dev/sdx``
-    and format ``mkfs.ext4 /dev/sdx``
-
-    For details, please refer to the [Partitioning](https://wiki.archlinux.org/index.php/Partitioning)
+    > Use ``fdisk /dev/sdx`` and format ``mkfs.ext4 /dev/sdx``.
+    > 
+    > For details, please refer to the [Partitioning](https://wiki.archlinux.org/index.php/Partitioning)
     
 5. Mount new root
 ``mount /dev/sdxY /mnt``
