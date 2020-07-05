@@ -70,7 +70,7 @@ hwclock --systohc
 2. Install basic tools
 ````
 # My text editor and terminal multiplexer
-pacman -S vim tmux
+pacman -S vim tmux htop
 
 # lib, wifi tools and intel cpu stability and security updates
 pacman -S dialog wpa_supplicant networkmanager netctl intel-ucode
@@ -131,3 +131,24 @@ umount /mnt/boot
 umount /mnt
 reboot
 ````
+
+9. Make a swap
+````
+# Login root account
+# Create a fulled zero 4GB file
+dd if=/dev/zero of=/swapfile bs=1M conut=4096
+chmod 600 /swapfile
+
+# Set up a Linux swap area
+mkswap /swapfile
+swapon /swapfile
+
+# Let swapfile can auto-monut
+# Add /swapfile	none	swap	defaults	0	0
+vim /etc/fstab
+
+# Reboot and check its mounted
+reboot
+htop
+````
+
