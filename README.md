@@ -44,8 +44,8 @@ and no output
 
 7. Change the mirrors' priority
 ``vim /etc/pacman.d/mirrorlist``
-> The higher a mirror is placed in the list, the more priority it is given when downloading a package.
-> And this file will later be copied to the new system by pacstrap, so it is worth getting right.
+    > The higher a mirror is placed in the list, the more priority it is given when downloading a package.
+    > And this file will later be copied to the new system by pacstrap, so it is worth getting right.
 
 8. Install essential packages
 ``pacstrap /mnt base base-devel linux linux-firmware dhcpcd``
@@ -74,8 +74,9 @@ pacman -S vim tmux htop
 
 # lib, wifi tools and intel cpu stability and security updates
 pacman -S dialog wpa_supplicant networkmanager netctl intel-ucode
+systemctl enable networkmanager
 
-# help grub to scanning already exists os
+# Those package can helps grub to scanning already exists os
 pacman -S os-prober ntfs-3g
 ````
 
@@ -152,3 +153,7 @@ reboot
 htop
 ````
 
+Options: wifi configuration
+````
+nmtui
+````
