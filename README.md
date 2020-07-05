@@ -38,7 +38,7 @@ and no output
 ``mount /dev/sdxY /mnt``
 
 6. Mount EFI system partition
-``mkdir /mnt/boot``and``mount /dev/sdxY /mnt/boot``
+``mkdir /mnt/boot`` and ``mount /dev/sdxY /mnt/boot``
 
 7. Change the mirrors' priority
 ``vim /etc/pacman.d/mirrorlist``
