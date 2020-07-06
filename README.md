@@ -148,7 +148,7 @@ vim /etc/fstab
 
 # Reboot and check its mounted
 reboot
-free -g
+free -h
 ````
 
 Options: wifi configuration
