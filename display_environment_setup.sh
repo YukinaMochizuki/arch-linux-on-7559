@@ -18,6 +18,9 @@ sudo pacman -S --noconfirm w3m imlib2
 # Sound support
 sudo pacman -S --noconfirm alsa-utils pulseaudio pulseaudio-alsa pulseaudio-bluetooth pavucontrol
 
+# Chinese input support
+sudo pacman -S --noconfirm ibus ibus-chewing
+
 # RDP support
 sudo pacman -S --noconfirm freerdp remmina
 
