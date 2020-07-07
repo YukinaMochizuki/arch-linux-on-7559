@@ -1,4 +1,4 @@
 #/bin/bash
 
-sudo pacman -S git unzip curl wget cmake python3-dev neofetch openssh
+sudo pacman -S --noconfirm git unzip curl wget cmake python3-dev neofetch openssh picom
 
