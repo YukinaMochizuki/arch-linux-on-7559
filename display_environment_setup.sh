@@ -27,6 +27,9 @@ sudo pacman -S --noconfirm freerdp remmina
 # Wallpaper support
 sudo pacman -S --noconfirm feh
 
+# Backlight change util
+sudo pacman -S --noconfirm light
+
 # Enable the display manager has started with system boot
 sudo systemctl enable lightdm
 sudo systemctl start lightdm
