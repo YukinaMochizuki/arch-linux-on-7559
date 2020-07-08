@@ -62,6 +62,7 @@ check the file content correct
 ````
 # Taipei time zone
 ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+timedatectl set-local-rtc 1 --adjust-system-clock
 hwclock --systohc
 ````
 
