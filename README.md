@@ -160,4 +160,6 @@ nmtui
 ## Screenshot
 This is what my laptop looks like now, I will add the remaining steps and dotfile to this note or new repo (such as dotfile v2...etc).
 
+Wallpaper source: [pixiv](https://www.pixiv.net/artworks/77785675)
+
 ![](https://github.com/YukinaMochizuki/arch-linux-on-7559/blob/master/2020-07-19-163901_1920x1080_scrot.png)
