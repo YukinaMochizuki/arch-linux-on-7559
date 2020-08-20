@@ -73,7 +73,7 @@ pacman -S vim tmux htop
 
 # lib, wifi tools and intel cpu stability and security updates
 pacman -S dialog wpa_supplicant networkmanager netctl intel-ucode
-systemctl enable networkmanager
+systemctl enable NetworkManager
 
 # Those package can helps grub to scanning already exists os
 pacman -S os-prober ntfs-3g
