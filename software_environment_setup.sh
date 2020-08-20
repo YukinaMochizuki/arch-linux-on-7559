@@ -1,5 +1,5 @@
 #!/bin/bash
 
 # vivaldi
-yay -Syu vivaldi vivaldi-ffmpeg-codecs
+yay -Syu vivaldi vivaldi-ffmpeg-codecs typora notion-app
 
