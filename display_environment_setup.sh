@@ -10,7 +10,7 @@ sudo pacman -S --noconfirm xorg i3-gaps i3lock i3status lightdm lightdm-gtk-gree
 sudo pacman -S --noconfirm chromium
 
 # Terminal and application luncher
-sudo pacman -S --noconfirm rxvt-unicode ranger demenu rofi
+sudo pacman -S --noconfirm rxvt-unicode ranger dmenu rofi
 
 # Terminal image support
 sudo pacman -S --noconfirm w3m imlib2
