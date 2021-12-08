@@ -6,7 +6,7 @@ sudo pacman -Syu --noconfirm xf86-video-intel nvidia nvidia-utils nvidia-setting
 # Install display manager, window manager amd Google CJK fonts
 sudo pacman -S --noconfirm xorg i3-gaps i3lock i3status lightdm lightdm-gtk-greeter noto-fonts-cjk
 
-# Let us first have the most basic Internet capabilities
+# Let us have the most basic Internet capabilities first
 sudo pacman -S --noconfirm chromium
 
 # Terminal and application luncher
@@ -30,6 +30,6 @@ sudo pacman -S --noconfirm feh
 # Backlight change util
 sudo pacman -S --noconfirm light
 
-# Enable the display manager has started with system boot
+# Enable the display manager
 sudo systemctl enable lightdm
 sudo systemctl start lightdm
