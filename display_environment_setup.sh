@@ -4,7 +4,7 @@
 sudo pacman -Syu --noconfirm xf86-video-intel nvidia nvidia-utils nvidia-settings lib32-nvidia-utils
 
 # Install display manager, window manager amd Google CJK fonts
-sudo pacman -S --noconfirm xorg i3-gaps i3lock i3status lightdm lightdm-gtk-greeter noto-fonts-cjk
+sudo pacman -S --noconfirm xorg i3-gaps i3lock i3status lightdm lightdm-gtk-greeter noto-fonts-cjk compton
 
 # Let us have the most basic Internet capabilities first
 sudo pacman -S --noconfirm chromium
